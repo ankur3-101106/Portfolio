@@ -1,94 +1,166 @@
 <div align="center">
 
-# 🛡️ Ankur's Cyber Security Corner
+# Ankur's Cyber Security Corner
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+my+digital+garden.;It+is+me+Ankur.)](https://github.com/ankur3-101106)
+**A personal portfolio, interactive blog, and structured knowledge base — built for speed, motion, and readability.**
 
-*A personal portfolio, interactive blog, and digital notebook built with modern web technologies.*
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-ankur3--101106.github.io-0a66c2?style=for-the-badge)](https://ankur3-101106.github.io)
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Docusaurus](https://img.shields.io/badge/Docusaurus-3.10.1-green.svg?style=for-the-badge&logo=docusaurus&logoColor=white)
-![Three.js](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
+[![Docusaurus](https://img.shields.io/badge/Docusaurus-3.10.2-3ECC5F?style=flat-square&logo=docusaurus&logoColor=white)](https://docusaurus.io/)
+[![React](https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![TypeScript-ready JS](https://img.shields.io/badge/JavaScript-ES2022-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/javascript)
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square)](./LICENSE.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](./Contributing.md)
 
 </div>
 
+---
 
+## 📖 About
 
-## 🌌 About The Cosmos
+**Cyber Security Corner** is my digital garden — a single place that combines three things:
 
-Welcome to the repository of my personal website and knowledge base! This isn't just a static site—it's a dynamic, interactive space where I document my journey through **Cyber Security**, software development, and everything in between. 
+| Surface | What it holds |
+|---|---|
+| **Portfolio** | An animated landing page showcasing my journey, projects, experience, and certifications in offensive security, networking, and automation |
+| **Notes** | Exam-ready study notes organized semester-by-semester across Computer Science and Cyber Security subjects |
+| **Blog** | Occasional deep dives, updates, and write-ups |
 
-Built on the robust [Docusaurus](https://docusaurus.io/) framework, it integrates rich media, complex mathematical notation, diagramming, and fluid animations.
+It is far more than a static site: rich mathematical notation, diagrams, instant search, and fluid animations are all first-class citizens.
 
-## 🎨 Under The Hood (Tech Stack & Magic)
+## ✨ Features
 
-Here is the alchemy that powers this experience:
+- **🎬 Motion-rich portfolio** — GSAP + ScrollTrigger choreography, Lenis buttery smooth scrolling, Framer Micro-interactions, Three.js visuals, and canvas effects (Matrix rain, particle grid)
+- **🧮 Math notation** — Full KaTeX support (`$E = mc^2$`) wired into both docs and blog
+- **📊 Diagramming** — Mermaid flowcharts and sequence diagrams rendered natively
+- **🔍 Instant search** — Offline-capable local search (`docusaurus-search-local`) with highlighted terms on target pages
+- **🌗 Light & dark mode** — Respects system preference with a manual toggle
+- **📈 Reading UX** — Scroll progress bar, sticky TOC scrollspy, reading-time estimates, RSS + Atom feeds
+- **⏱ Live clock** — Custom swizzled navbar component showing real-time time
+- **📝 MDX everywhere** — Components inside markdown for interactive notes
 
-- **🧠 Core Framework**: [Docusaurus v3](https://docusaurus.io/) & React 19.
-- **✨ Fluid Animations**: [GSAP](https://gsap.com/), [Anime.js](https://animejs.com/), & [Framer Motion](https://www.framer.com/motion/).
-- **🧊 3D Elements**: [Three.js](https://threejs.org/) for immersive visuals.
-- **📜 Rich Markdown**: Native support for **KaTeX** (Math formulas) and **Mermaid** (Flowcharts & Diagrams).
-- **🔍 Search**: Instant local search capabilities powered by `@easyops-cn/docusaurus-search-local`.
-- **🧵 Smooth Scrolling**: [Lenis](https://github.com/studio-freight/lenis) for buttery smooth navigation.
+## 🛠️ Built With
 
-## 🗺️ Navigation Chart (Repository Structure)
+| Layer | Technology |
+|---|---|
+| Framework | [Docusaurus 3](https://docusaurus.io/) · React 19 |
+| Animation | GSAP · Anime.js · Framer Motion · Lenis |
+| 3D | Three.js |
+| Content | MDX · remark-math + rehype-katex · Mermaid |
+| Search | [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local) |
+| Hosting | GitHub Pages |
+
+## 🗂️ Repository Structure
 
 ```text
-📂 portfolio
- ┣ 📂 blog/                # Ramblings, updates, and deep dives.
- ┣ 📂 docs/                # The "Cyber Security Corner" notes & tutorials.
- ┣ 📂 src/                 # Custom React components, CSS, and interactive logic.
- ┣ 📂 static/              # Assets (images, favicons, raw files).
- ┗ 📜 docusaurus.config.js # The blueprint of the site.
+portfolio/
+├── docs/                    # Study notes ("The Cyber Security Corner")
+│   ├── Sem-4/               #   Semester 4 subjects
+│   └── Sem-5/               #   Semester 5 subjects
+├── blog/                    # Blog posts (MDX, dated)
+├── src/
+│   ├── components/          # Portfolio section components (Hero, About, Projects…)
+│   ├── pages/               # Landing page & standalone pages
+│   ├── theme/               # Swizzled Docusaurus theme components
+│   ├── hooks/               # Reusable animation hooks (GSAP wrappers)
+│   ├── styles/              # Global stylesheets
+│   └── css/                 # Infima theme overrides
+├── static/                  # Images, fonts, favicons
+├── docusaurus.config.js     # Site configuration
+└── sidebars.js              # Sidebar generation (autogenerated)
 ```
 
-## 🛠️ Booting Up The Matrix (Installation)
+### Notes Organization
 
-Want to run this locally and see it in action? Follow these steps:
+Notes follow the folder structure — each subject is a category, each unit its own page:
 
-### 1. Requirements
-- **Node.js** `>= 20.0`
-- **npm**, **yarn**, or **pnpm**
+```
+docs/
+├── Sem-4/
+│   ├── OS    ├── PPFD   ├── CRY   ├── NCS   └── SE
+└── Sem-5/
+    ├── DAA   ├── MAS    ├── MFW   ├── WAS   ├── QR   └── Open Elective
+```
 
-### 2. Initialization
+The sidebar is **auto-generated** from this structure. To add content, drop a new `.mdx` file into the right subject folder and set `sidebar_position` in frontmatter — no sidebar edits needed.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js ≥ 20**
+- **Bun** (preferred) or npm
+
+### Installation
+
 ```bash
-# Clone the nexus
+# Clone the repository
 git clone https://github.com/ankur3-101106/portfolio.git
-
-# Enter the directory
 cd portfolio
 
-# Install the dependencies
-npm install
+# Install dependencies
+bun install        # or: npm install
 ```
 
-### 3. Ignition
+### Run Locally
+
 ```bash
-# Start the local development server (with hot reloading)
-npm run start
+bun run start      # Dev server with HMR → http://localhost:3000
 ```
-*The gateway should automatically open at `http://localhost:3000`.*
 
-### 4. Compilation
+### Production Build
+
 ```bash
-# Generate the production-ready build files
-npm run build
-
-# Serve the production build locally to test
-npm run serve
+bun run build      # Generate optimized production files in /build
+bun run serve      # Serve the build locally to preview
 ```
 
-## 🤝 The Open Source Pact
+> ⚠️ The build enforces `onBrokenLinks: 'throw'` — any broken internal link will fail the build. This keeps the knowledge base healthy.
 
-This repository is an open book. Feel free to explore the source code, fork it, and adapt the interactive components for your own projects. 
+## 📜 Available Scripts
 
-Please review the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [Contributing.md](Contributing.md) if you wish to contribute.
+| Script | Description |
+|---|---|
+| `start` | Start the development server with hot reload |
+| `build` | Compile the site for production |
+| `serve` | Serve the production build locally |
+| `clear` | Clear Docusaurus cache and generated files |
+| `swizzle` | Eject and customize theme components |
+| `deploy` | Deploy to GitHub Pages |
+| `write-translations` | Extract translation strings for i18n |
+| `write-heading-ids` | Add explicit heading IDs to markdown |
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read [`Contributing.md`](./Contributing.md) and our [`Code of Conduct`](./CODE_OF_CONDUCT.md) first.
+
+Quick guide:
+
+1. Fork the repository
+2. Create a descriptive branch — `feature/add-contact-form`, `fix/navbar-overflow`, `docs/update-notes`
+3. Commit using Conventional Commits — `feat:`, `fix:`, `docs:`
+4. Verify the production build passes (`bun run build`)
+5. Open a Pull Request
+
+For security vulnerabilities, please follow [`SECURITY.md`](./SECURITY.md) — do not open public issues.
+
+## 🛡️ Security
+
+Security is the heart of this project's purpose. If you discover a vulnerability **in this repository itself**, please report it privately per [`SECURITY.md`](./SECURITY.md).
+
+## 📄 License
+
+This project is licensed under the **GNU General Public License v3.0** — see [`LICENSE.md`](./LICENSE.md) for details.
+
+---
 
 <div align="center">
-  <p>Crafted with ☕ and code by Ankur.</p>
-  <p>
-    <a href="https://github.com/ankur3-101106">GitHub</a> • 
-    <a href="https://ankur3-101106.github.io">Live Site</a>
-  </p>
+
+**Crafted with ☕ and code by [Ankur](https://github.com/ankur3-101106)**
+
+[GitHub](https://github.com/ankur3-101106) · [LinkedIn](https://linkedin.com/in/ankur101106) · [X](https://x.com/ankur3_101106) · [Live Site](https://ankur3-101106.github.io)
+
+⭐ Found this useful? Consider giving it a star!
+
 </div>
